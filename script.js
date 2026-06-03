@@ -17,19 +17,38 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-const contactForm = document.querySelector('form');
-contactForm.addEventListener('submit', e => {
+const contactForm = document.getElementById('contactForm');
+const formMessage = document.getElementById('formMessage');
+
+contactForm.addEventListener('submit', async function(e) {
   e.preventDefault();
 
-  const name = contactForm.querySelector('input[type="text"]').value.trim();
-  const email = contactForm.querySelector('input[type="email"]').value.trim();
-  const course = contactForm.querySelector('select').value;
-  const message = contactForm.querySelector('textarea').value.trim();
+  formMessage.className = 'form-message';
+  formMessage.textContent = 'Sending your message...';
 
-  const subject = encodeURIComponent('EL-B Talk Website Inquiry');
-  const body = encodeURIComponent(
-    `Name: ${name}\nEmail: ${email}\nInterest: ${course}\nMessage: ${message}`
-  );
+  const formData = new FormData(contactForm);
+  formData.append('_subject', 'New EL-B Talk Website Inquiry');
+  formData.append('_captcha', 'false');
+  formData.append('_template', 'table');
 
-  window.location.href = `mailto:el.btalkinfo@gmail.com?subject=${subject}&body=${body}`;
+  try {
+    const response = await fetch('https://formsubmit.co/ajax/el.btalkinfo@gmail.com', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      formMessage.className = 'form-message success';
+      formMessage.textContent = 'Thank you for contacting EL-B Talk! An agent will contact you right away.';
+      contactForm.reset();
+    } else {
+      throw new Error('Form submission failed');
+    }
+  } catch (error) {
+    formMessage.className = 'form-message error';
+    formMessage.textContent = 'Sorry, there was a problem sending your message. Please contact us by WhatsApp or email.';
+  }
 });

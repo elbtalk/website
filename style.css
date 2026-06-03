@@ -70,6 +70,9 @@ a{color:var(--blue);font-weight:800}
 form{display:grid;gap:14px}
 input,select,textarea{width:100%;padding:14px;border:1px solid #d7dee8;border-radius:14px;font:inherit}
 textarea{min-height:130px}
+.form-message{font-weight:900;text-align:center;color:var(--blue);margin-top:8px}
+.form-message.success{background:#ecfdf5;border:1px solid #86efac;padding:14px;border-radius:16px}
+.form-message.error{background:#fef2f2;border:1px solid #fecaca;padding:14px;border-radius:16px}
 footer{background:var(--blue);color:white;text-align:center;padding:30px}
 .reveal{opacity:0;transform:translateY(24px);transition:.7s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}

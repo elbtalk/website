@@ -163,17 +163,18 @@
         </div>
       </div>
 
-      <form>
-        <input type="text" placeholder="Your name" />
-        <input type="email" placeholder="Your email" />
-        <select>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <select name="interest" required>
           <option>Conversation Club</option>
           <option>Business English</option>
           <option>IELTS Preparation</option>
           <option>Private Lessons</option>
         </select>
-        <textarea placeholder="Tell us about your goals..."></textarea>
+        <textarea name="message" placeholder="Tell us about your goals..." required></textarea>
         <button class="btn primary" type="submit">Send Message</button>
+        <p id="formMessage" class="form-message"></p>
       </form>
     </section>
   </main>
