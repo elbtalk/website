@@ -41,8 +41,8 @@ h3{color:var(--blue);margin-bottom:8px}
 .section{max-width:1200px;margin:auto;padding:80px 22px}
 .intro{text-align:center}
 .feature-grid,.cards,.business-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin-top:32px}
-.feature-grid div,.cards article,.testimonial-box div,.contact form,.embed{background:white;border:1px solid #eef1f5;border-radius:26px;padding:25px;box-shadow:var(--shadow)}
-.feature-grid i,.cards i,.business-grid i{font-size:2rem;color:var(--orange);margin-bottom:12px}
+.feature-grid div,.cards article,.testimonial-box div,.contact form,.embed,.test-item{background:white;border:1px solid #eef1f5;border-radius:26px;padding:25px;box-shadow:var(--shadow)}
+.feature-grid i,.cards i,.business-grid i,.test-item i{font-size:2rem;color:var(--orange);margin-bottom:12px}
 .cards article ul{padding-left:18px;margin-top:12px}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center;background:var(--cream);max-width:100%;padding-left:calc((100% - 1200px)/2 + 22px);padding-right:calc((100% - 1200px)/2 + 22px)}
 .chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
@@ -56,8 +56,14 @@ h3{color:var(--blue);margin-bottom:8px}
 .bands span{background:var(--orange)}
 .cards button{margin-top:15px;background:var(--blue);color:white;border:0;border-radius:999px;padding:10px 16px;font-weight:800}
 .cta{text-align:center;background:var(--cream);max-width:100%}
-.cta>*{max-width:850px;margin-left:auto;margin-right:auto}
-.embed{min-height:210px;border:2px dashed var(--orange);display:grid;place-items:center;margin-top:25px;margin-bottom:20px;color:#64748b}
+.cta>*{max-width:900px;margin-left:auto;margin-right:auto}
+.test-features{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin:30px auto}
+.test-item{display:flex;align-items:center;gap:10px;font-weight:800;padding:16px 20px}
+.test-item i{font-size:1.2rem;margin-bottom:0}
+.small-note{margin-top:20px;color:#64748b}
+.embed{min-height:210px;border:2px dashed var(--orange);display:grid;place-items:center;margin-top:30px;margin-bottom:20px;color:#64748b;overflow:hidden}
+.form-embed{padding:0;border:0;background:white}
+.form-embed iframe{display:block;border-radius:22px}
 .contact{display:grid;grid-template-columns:1fr 1fr;gap:35px}
 form{display:grid;gap:14px}
 input,select,textarea{width:100%;padding:14px;border:1px solid #d7dee8;border-radius:14px;font:inherit}
