@@ -27,9 +27,6 @@ contactForm.addEventListener('submit', async function(e) {
   formMessage.textContent = 'Sending your message...';
 
   const formData = new FormData(contactForm);
-  formData.append('_subject', 'New EL-B Talk Website Inquiry');
-  formData.append('_captcha', 'false');
-  formData.append('_template', 'table');
 
   try {
     const response = await fetch('https://formsubmit.co/ajax/el.btalkinfo@gmail.com', {
@@ -45,7 +42,7 @@ contactForm.addEventListener('submit', async function(e) {
       formMessage.textContent = 'Thank you for contacting EL-B Talk! An agent will contact you right away.';
       contactForm.reset();
     } else {
-      throw new Error('Form submission failed');
+      throw new Error('Message not sent');
     }
   } catch (error) {
     formMessage.className = 'form-message error';
