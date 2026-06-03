@@ -1,0 +1,1 @@
+// EL-B Talk script.js placeholder
