@@ -17,7 +17,19 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-document.querySelector('form').addEventListener('submit', e => {
+const contactForm = document.querySelector('form');
+contactForm.addEventListener('submit', e => {
   e.preventDefault();
-  alert('Thank you! Connect this form later to Google Forms, Tally, Formspree or Netlify Forms.');
+
+  const name = contactForm.querySelector('input[type="text"]').value.trim();
+  const email = contactForm.querySelector('input[type="email"]').value.trim();
+  const course = contactForm.querySelector('select').value;
+  const message = contactForm.querySelector('textarea').value.trim();
+
+  const subject = encodeURIComponent('EL-B Talk Website Inquiry');
+  const body = encodeURIComponent(
+    `Name: ${name}\nEmail: ${email}\nInterest: ${course}\nMessage: ${message}`
+  );
+
+  window.location.href = `mailto:el.btalkinfo@gmail.com?subject=${subject}&body=${body}`;
 });
