@@ -205,3 +205,41 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
   font-weight:900;
   margin-top:6px;
 }
+
+
+/* Benefit circles / premium badges */
+.benefit-pills{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:14px 0 18px;
+}
+
+.benefit-pills span{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background:#fff;
+  color:var(--blue);
+  border:1px solid #f4d7b8;
+  border-radius:999px;
+  padding:8px 11px;
+  font-size:.76rem;
+  font-weight:1000;
+  box-shadow:0 8px 20px rgba(7,27,53,.08);
+}
+
+.benefit-pills span::before{
+  content:"";
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:var(--orange);
+  box-shadow:0 0 0 4px rgba(242,140,40,.14);
+}
+
+.student-benefits p::before{
+  content:"✓ ";
+  color:var(--orange);
+  font-weight:1000;
+}

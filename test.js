@@ -100,10 +100,30 @@ function showResult() {
     email: document.getElementById('studentEmail').value || 'Sin email',
     score,
     level: result.title,
+    recommendation: result.recommendation,
     date: new Date().toISOString()
   };
 
   localStorage.setItem('elbtalk_last_test_result', JSON.stringify(data));
+  sendResultToEmail(data);
+}
+
+function sendResultToEmail(data) {
+  const form = document.getElementById('resultEmailForm');
+
+  if (!form) return;
+
+  document.getElementById('emailName').value = data.name;
+  document.getElementById('emailStudent').value = data.email;
+  document.getElementById('emailScore').value = `${data.score}/${QUESTIONS.length}`;
+  document.getElementById('emailLevel').value = data.level;
+  document.getElementById('emailRecommendation').value = data.recommendation;
+
+  if (data.email !== 'Sin email') {
+    setTimeout(() => {
+      form.submit();
+    }, 1200);
+  }
 }
 
 function getLevel(score) {

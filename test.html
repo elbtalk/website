@@ -67,7 +67,19 @@
           <a href="index.html#contact" class="btn primary">Contactar EL-B Talk</a>
           <button id="restartBtn" class="btn ghost">Rehacer test</button>
         </div>
-        <p class="small-note">Este resultado es orientativo. Para una ubicación más precisa recomendamos complementar el test con una breve entrevista oral.</p>
+        
+        <form id="resultEmailForm" class="hidden" action="https://formsubmit.co/el.btalkinfo@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nuevo resultado de Placement Test - EL-B Talk" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="Nombre" id="emailName" />
+          <input type="hidden" name="Email" id="emailStudent" />
+          <input type="hidden" name="Puntaje" id="emailScore" />
+          <input type="hidden" name="Nivel" id="emailLevel" />
+          <input type="hidden" name="Recomendacion" id="emailRecommendation" />
+        </form>
+
+        <p class="small-note">Este resultado es orientativo. Al finalizar, EL-B Talk recibirá tu nivel estimado para poder orientarte mejor. Para una ubicación más precisa recomendamos complementar el test con una breve entrevista oral.</p>
       </div>
     </section>
   </main>
