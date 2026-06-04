@@ -245,25 +245,45 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
 }
 
 
-/* Final EL-B Talk premium benefits */
-.ideal-for{
-  margin:10px 0 14px;
-  font-size:.94rem;
-  line-height:1.45;
-  color:#0b2545;
+/* ===== EL-B TALK FINAL DEFINITIVE VERSION ===== */
+
+.ideal-badge{
+  background:#fff8ef;
+  border:1px solid #f4d7b8;
+  border-radius:20px;
+  padding:14px 18px;
+  margin:14px 0 18px;
+  box-shadow:0 8px 20px rgba(7,27,53,.08);
 }
 
-.ideal-for strong{
+.ideal-title{
+  color:#f28c28;
+  font-size:.8rem;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+
+.ideal-text{
+  margin-top:6px;
   color:#0b2545;
+  font-weight:700;
+  line-height:1.45;
 }
 
 .club-ideal{
   background:white;
-  border:1px solid #f4d7b8;
-  border-radius:18px;
-  padding:14px 16px;
-  box-shadow:0 10px 24px rgba(7,27,53,.08);
   max-width:680px;
+}
+
+.student-benefits p{
+  font-weight:700;
+}
+
+.student-benefits p::before{
+  content:"✓ ";
+  color:#f28c28;
+  font-weight:900;
 }
 
 .benefit-pills{
@@ -276,28 +296,20 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
 .benefit-pills span{
   display:inline-flex;
   align-items:center;
-  gap:6px;
   background:#fff;
-  color:var(--blue);
   border:1px solid #f4d7b8;
   border-radius:999px;
-  padding:8px 11px;
-  font-size:.74rem;
-  font-weight:1000;
-  box-shadow:0 8px 20px rgba(7,27,53,.08);
+  padding:8px 12px;
+  font-size:.75rem;
+  font-weight:800;
+  box-shadow:0 6px 14px rgba(7,27,53,.06);
 }
 
 .benefit-pills span::before{
   content:"";
-  width:9px;
-  height:9px;
+  width:8px;
+  height:8px;
   border-radius:50%;
-  background:var(--orange);
-  box-shadow:0 0 0 4px rgba(242,140,40,.14);
-}
-
-.student-benefits p::before{
-  content:"✓ ";
-  color:var(--orange);
-  font-weight:1000;
+  background:#f28c28;
+  margin-right:8px;
 }
