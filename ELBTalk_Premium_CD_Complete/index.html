@@ -6,6 +6,15 @@
   <title>EL-B Talk English Centre</title>
   <meta name="description" content="EL-B Talk English Centre: personalized English coaching, Business English, IELTS preparation and Conversation Club." />
   <link rel="stylesheet" href="style.css" />
+  .cards article .btn {
+  margin-top: 15px;
+}
+
+.disabled-link {
+  opacity: 0.55;
+  pointer-events: none;
+  cursor: not-allowed;
+}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
@@ -113,20 +122,60 @@
       <div class="bands"><span>5.5</span><span>6.0</span><span>6.5</span><span>7.0+</span></div>
       <a href="#contact" class="btn primary">Practice IELTS Speaking</a>
     </section>
+<section id="resources" class="section reveal">
+  <p class="tag">Learning Resources</p>
+  <h2>Resources for continuous practice</h2>
 
-    <section id="resources" class="section reveal">
-      <p class="tag">Learning Resources</p>
-      <h2>Resources for continuous practice</h2>
-      <div class="cards">
-        <article><i class="fa-solid fa-language"></i><h3>Vocabulary</h3><p>PDF placeholder, word banks and collocations.</p><button>Download</button></article>
-        <article><i class="fa-solid fa-spell-check"></i><h3>Grammar</h3><p>Guides, worksheets and revision files.</p><button>Download</button></article>
-        <article><i class="fa-solid fa-volume-high"></i><h3>Listening</h3><p>Audio and video placeholders.</p><button>Download</button></article>
-        <article><i class="fa-solid fa-book"></i><h3>Reading</h3><p>Texts and comprehension tasks.</p><button>Download</button></article>
-        <article><i class="fa-solid fa-comment-dots"></i><h3>Pronunciation</h3><p>Sounds, rhythm and intonation.</p><button>Download</button></article>
-        <article><i class="fa-solid fa-briefcase"></i><h3>Business English</h3><p>Templates for emails and meetings.</p><button>Download</button></article>
-      </div>
-      <!-- Insert future PDFs, audio files and videos here. -->
-    </section>
+  <div class="cards">
+    <article>
+      <i class="fa-solid fa-language"></i>
+      <h3>Vocabulary</h3>
+      <p>Word banks, collocations and useful expressions.</p>
+      <a href="#" class="btn secondary disabled-link">Coming soon</a>
+    </article>
+
+    <article>
+      <i class="fa-solid fa-spell-check"></i>
+      <h3>Grammar</h3>
+      <p>Question structure, conversation starters and speaking practice.</p>
+      <a
+        href="resources/grammar-boost.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn primary">
+        Practice Grammar
+      </a>
+    </article>
+
+    <article>
+      <i class="fa-solid fa-volume-high"></i>
+      <h3>Listening</h3>
+      <p>Audio and video-based practice.</p>
+      <a href="#" class="btn secondary disabled-link">Coming soon</a>
+    </article>
+
+    <article>
+      <i class="fa-solid fa-book"></i>
+      <h3>Reading</h3>
+      <p>Texts and comprehension tasks.</p>
+      <a href="#" class="btn secondary disabled-link">Coming soon</a>
+    </article>
+
+    <article>
+      <i class="fa-solid fa-comment-dots"></i>
+      <h3>Pronunciation</h3>
+      <p>Sounds, rhythm and intonation.</p>
+      <a href="#" class="btn secondary disabled-link">Coming soon</a>
+    </article>
+
+    <article>
+      <i class="fa-solid fa-briefcase"></i>
+      <h3>Business English</h3>
+      <p>Templates for emails, meetings and presentations.</p>
+      <a href="#" class="btn secondary disabled-link">Coming soon</a>
+    </article>
+  </div>
+</section>
 
     <section id="test" class="section cta reveal">
       <p class="tag">Free Placement Test</p>
