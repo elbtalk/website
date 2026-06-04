@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test de Nivel | EL-B Talk</title>
+  <meta name="description" content="Test de nivel automático de EL-B Talk para estimar tu nivel de inglés." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="test.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html#home" class="logo"><span>EL-B</span> Talk</a>
+      <ul class="nav-links test-nav">
+        <li><a href="index.html#courses">Cursos</a></li>
+        <li><a href="index.html#contact">Contacto</a></li>
+        <li><a href="index.html" class="nav-cta">Volver al sitio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="test-hero">
+      <p class="tag">Test de nivel gratuito</p>
+      <h1>Descubrí tu nivel de inglés</h1>
+      <p>Respondé las 50 preguntas. Al finalizar, vas a recibir tu nivel estimado, tu puntaje y una recomendación de curso EL-B Talk.</p>
+    </section>
+
+    <section class="test-wrapper">
+      <div id="introCard" class="test-card">
+        <h2>Antes de empezar</h2>
+        <p>Completá tus datos para que podamos orientarte mejor.</p>
+        <div class="student-grid">
+          <input id="studentName" type="text" placeholder="Tu nombre" />
+          <input id="studentEmail" type="email" placeholder="Tu email" />
+        </div>
+        <button id="startBtn" class="btn primary">Empezar test</button>
+      </div>
+
+      <div id="quizCard" class="test-card hidden">
+        <div class="progress-top">
+          <span id="questionCounter">Pregunta 1 de 50</span>
+          <span id="progressPercent">0%</span>
+        </div>
+        <div class="progress-bar"><div id="progressFill"></div></div>
+        <h2 id="questionText"></h2>
+        <div id="optionsBox" class="options-box"></div>
+        <div class="quiz-actions">
+          <button id="prevBtn" class="btn secondary">Anterior</button>
+          <button id="nextBtn" class="btn primary">Siguiente</button>
+        </div>
+      </div>
+
+      <div id="resultCard" class="test-card result-card hidden">
+        <p class="tag">Resultado automático</p>
+        <h2 id="levelTitle"></h2>
+        <p id="scoreText"></p>
+        <p id="levelDescription"></p>
+        <div class="recommendation-box">
+          <h3>Recomendación EL-B Talk</h3>
+          <p id="courseRecommendation"></p>
+        </div>
+        <div class="result-actions">
+          <a href="index.html#courses" class="btn secondary">Ver cursos</a>
+          <a href="index.html#contact" class="btn primary">Contactar EL-B Talk</a>
+          <button id="restartBtn" class="btn ghost">Rehacer test</button>
+        </div>
+        <p class="small-note">Este resultado es orientativo. Para una ubicación más precisa recomendamos complementar el test con una breve entrevista oral.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 EL-B Talk English Centre · Test de nivel automático</p>
+  </footer>
+
+  <script src="questions.js"></script>
+  <script src="test.js"></script>
+</body>
+</html>
