@@ -1,0 +1,8 @@
+website/
+│
+├── academy/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   ├── grammar-boost.pdf
+│   └── commercial-proposal.pdf
