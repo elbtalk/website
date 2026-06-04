@@ -146,3 +146,62 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
   text-transform:uppercase;
   letter-spacing:.04em;
 }
+
+
+/* Premium pricing style */
+.student-benefits p::before{
+  content:"✓ ";
+  color:var(--orange);
+  font-weight:1000;
+}
+
+.offer-price{
+  background:linear-gradient(180deg,#fff7ec 0%,#ffffff 100%);
+  border-radius:24px;
+  padding:20px;
+  margin:18px 0;
+  border:1px solid #f4d7b8;
+  box-shadow:0 12px 28px rgba(7,27,53,.08);
+}
+
+.rate-label{
+  display:block;
+  font-size:.72rem;
+  font-weight:1000;
+  text-transform:uppercase;
+  letter-spacing:.09em;
+  color:#64748b;
+  margin-bottom:2px;
+}
+
+.rate-label.highlight{
+  color:var(--orange-dark);
+  margin-top:10px;
+}
+
+.old-price{
+  display:inline-block;
+  color:#b91c1c;
+  font-size:1.18rem;
+  font-weight:1000;
+  text-decoration:line-through;
+  text-decoration-thickness:3px;
+  text-decoration-color:#b91c1c;
+  margin-bottom:6px;
+}
+
+.offer-price strong{
+  display:block;
+  color:var(--blue);
+  font-size:2.25rem;
+  line-height:1;
+  font-weight:1000;
+  letter-spacing:-.04em;
+}
+
+.offer-price small{
+  display:block;
+  color:#4b5b70;
+  font-weight:900;
+  margin-top:6px;
+}
