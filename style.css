@@ -105,56 +105,8 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
 .reveal{opacity:0;transform:translateY(24px);transition:.7s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
-@media(max-width:850px){
-  .menu-btn{display:block}
-  .nav-links{display:none;position:absolute;top:72px;left:16px;right:16px;background:white;border-radius:20px;box-shadow:var(--shadow);padding:20px;flex-direction:column}
-  .nav-links.open{display:flex}
-  .hero,.split,.contact,.catalog-layout{grid-template-columns:1fr}
-  .hero{padding-top:55px}
-  .floating-card{position:relative;left:0;bottom:0;margin-top:14px}
-  .catalog-filters{position:static}
-}
 
-
-.offer-price{
-  background:var(--cream);
-  border-radius:22px;
-  padding:18px;
-  margin:18px 0;
-  border:1px solid #f4d7b8;
-}
-.old-price{
-  display:block;
-  color:#8a94a6;
-  font-size:1rem;
-  font-weight:900;
-  text-decoration:line-through;
-  margin-bottom:4px;
-}
-.offer-price strong{
-  display:block;
-  color:var(--blue);
-  font-size:2rem;
-  line-height:1;
-  font-weight:1000;
-}
-.offer-price small{
-  display:block;
-  color:var(--orange-dark);
-  font-weight:900;
-  margin-top:6px;
-  text-transform:uppercase;
-  letter-spacing:.04em;
-}
-
-
-/* Premium pricing style */
-.student-benefits p::before{
-  content:"✓ ";
-  color:var(--orange);
-  font-weight:1000;
-}
-
+/* ===== FINAL PRICING / CATALOG ===== */
 .offer-price{
   background:linear-gradient(180deg,#fff7ec 0%,#ffffff 100%);
   border-radius:24px;
@@ -206,303 +158,6 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
   margin-top:6px;
 }
 
-
-/* Benefit circles / premium badges */
-.benefit-pills{
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-  margin:14px 0 18px;
-}
-
-.benefit-pills span{
-  display:inline-flex;
-  align-items:center;
-  gap:6px;
-  background:#fff;
-  color:var(--blue);
-  border:1px solid #f4d7b8;
-  border-radius:999px;
-  padding:8px 11px;
-  font-size:.76rem;
-  font-weight:1000;
-  box-shadow:0 8px 20px rgba(7,27,53,.08);
-}
-
-.benefit-pills span::before{
-  content:"";
-  width:9px;
-  height:9px;
-  border-radius:50%;
-  background:var(--orange);
-  box-shadow:0 0 0 4px rgba(242,140,40,.14);
-}
-
-.student-benefits p::before{
-  content:"✓ ";
-  color:var(--orange);
-  font-weight:1000;
-}
-
-
-/* ===== EL-B TALK FINAL DEFINITIVE VERSION ===== */
-
-.ideal-badge{
-  background:#fff8ef;
-  border:1px solid #f4d7b8;
-  border-radius:20px;
-  padding:14px 18px;
-  margin:14px 0 18px;
-  box-shadow:0 8px 20px rgba(7,27,53,.08);
-}
-
-.ideal-title{
-  color:#f28c28;
-  font-size:.8rem;
-  font-weight:900;
-  text-transform:uppercase;
-  letter-spacing:.08em;
-}
-
-.ideal-text{
-  margin-top:6px;
-  color:#0b2545;
-  font-weight:700;
-  line-height:1.45;
-}
-
-.club-ideal{
-  background:white;
-  max-width:680px;
-}
-
-.student-benefits p{
-  font-weight:700;
-}
-
-.student-benefits p::before{
-  content:"✓ ";
-  color:#f28c28;
-  font-weight:900;
-}
-
-.benefit-pills{
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-  margin:14px 0 18px;
-}
-
-.benefit-pills span{
-  display:inline-flex;
-  align-items:center;
-  background:#fff;
-  border:1px solid #f4d7b8;
-  border-radius:999px;
-  padding:8px 12px;
-  font-size:.75rem;
-  font-weight:800;
-  box-shadow:0 6px 14px rgba(7,27,53,.06);
-}
-
-.benefit-pills span::before{
-  content:"";
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  background:#f28c28;
-  margin-right:8px;
-}
-
-
-
-/* ===== EL-B TALK FINAL STRONG MOBILE FIX ===== */
-@media (max-width: 768px){
-
-  html, body{
-    width:100%;
-    max-width:100%;
-    overflow-x:hidden;
-  }
-
-  .header{
-    width:100%;
-  }
-
-  .nav{
-    position:relative;
-    width:100%;
-    padding:16px 18px;
-  }
-
-  .menu-btn{
-    display:block;
-  }
-
-  .nav-links{
-    display:none;
-    position:absolute;
-    top:68px;
-    left:0;
-    right:0;
-    width:100%;
-    max-width:100%;
-    background:#fff;
-    flex-direction:column;
-    align-items:center;
-    gap:0;
-    padding:16px 0;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    z-index:9999;
-    border-radius:0 0 20px 20px;
-  }
-
-  .nav-links.open{
-    display:flex;
-  }
-
-  .nav-links li{
-    width:100%;
-    text-align:center;
-  }
-
-  .nav-links a{
-    display:block;
-    width:100%;
-    padding:14px 18px;
-  }
-
-  .hero,
-  .split,
-  .contact,
-  .catalog-layout{
-    display:grid;
-    grid-template-columns:1fr !important;
-    width:100%;
-    max-width:100%;
-  }
-
-  .section,
-  .hero,
-  .catalog,
-  .test-wrapper,
-  .test-hero{
-    width:100%;
-    max-width:100%;
-    padding-left:18px;
-    padding-right:18px;
-  }
-
-  .catalog-products,
-  .cards,
-  .feature-grid,
-  .business-grid{
-    display:grid;
-    grid-template-columns:1fr !important;
-    width:100%;
-    max-width:100%;
-    gap:22px;
-  }
-
-  .catalog-filters{
-    position:static !important;
-    width:100%;
-    max-width:100%;
-  }
-
-  .product-card,
-  .cards article,
-  .feature-grid div,
-  .testimonial-box div,
-  .contact form{
-    width:100%;
-    max-width:100%;
-    min-width:0;
-  }
-
-  .product-content{
-    width:100%;
-    max-width:100%;
-    min-width:0;
-    padding:22px;
-  }
-
-  .offer-price{
-    width:100%;
-    max-width:100%;
-    min-width:0;
-    overflow:visible;
-    box-sizing:border-box;
-  }
-
-  .offer-price strong{
-    font-size:clamp(1.7rem,9vw,2.15rem);
-    line-height:1.05;
-    word-break:normal;
-    overflow-wrap:anywhere;
-  }
-
-  .old-price{
-    font-size:1rem;
-    max-width:100%;
-    overflow-wrap:anywhere;
-  }
-
-  .rate-label,
-  .offer-price small{
-    max-width:100%;
-    overflow-wrap:anywhere;
-  }
-
-  .benefit-pills{
-    display:flex;
-    flex-direction:column;
-    align-items:stretch;
-    gap:8px;
-    width:100%;
-  }
-
-  .benefit-pills span{
-    width:100%;
-    max-width:100%;
-    justify-content:flex-start;
-    white-space:normal;
-  }
-
-  .ideal-badge{
-    width:100%;
-    max-width:100%;
-  }
-
-  h1{
-    font-size:clamp(2.45rem,13vw,3.6rem);
-  }
-
-  h2{
-    font-size:clamp(1.85rem,9vw,2.65rem);
-  }
-
-  .floating-card{
-    position:relative;
-    left:0;
-    bottom:auto;
-    margin-top:14px;
-    width:100%;
-  }
-
-  .buttons{
-    width:100%;
-  }
-
-  .buttons .btn{
-    text-align:center;
-  }
-}
-
-
-
-/* ===== EL-B TALK FINAL CLEAN VERSION ===== */
-
 .program-guide{
   background:#fff8ef;
   border:1px solid #f4d7b8;
@@ -510,10 +165,6 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
   padding:24px;
   margin:28px 0 32px;
   box-shadow:0 12px 28px rgba(7,27,53,.08);
-}
-
-.program-guide h3{
-  margin-bottom:8px;
 }
 
 .program-guide p{
@@ -565,24 +216,21 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
   margin-right:8px;
 }
 
-/* ===== MOBILE FIX DEFINITIVO ===== */
-@media (max-width: 768px){
-
-  html,
-  body{
+/* ===== MOBILE CLEAN FIX ===== */
+@media(max-width:850px){
+  html, body{
     width:100%;
     max-width:100%;
     overflow-x:hidden;
   }
 
-  .menu-btn{
-    display:block;
-  }
-
   .nav{
     position:relative;
-    width:100%;
     padding:16px 18px;
+  }
+
+  .menu-btn{
+    display:block;
   }
 
   .nav-links{
@@ -592,7 +240,6 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
     left:0;
     right:0;
     width:100%;
-    max-width:100%;
     background:#fff;
     flex-direction:column;
     align-items:center;
@@ -619,10 +266,7 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
   }
 
   .section,
-  .hero,
-  .catalog,
-  .test-wrapper,
-  .test-hero{
+  .hero{
     width:100%;
     max-width:100%;
     padding-left:18px;
@@ -635,8 +279,6 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
   .catalog-layout{
     display:flex !important;
     flex-direction:column !important;
-    width:100%;
-    max-width:100%;
   }
 
   .catalog-products{
@@ -644,7 +286,6 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
     flex-direction:column !important;
     gap:22px;
     width:100%;
-    max-width:100%;
   }
 
   .cards,
@@ -652,15 +293,11 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
   .business-grid{
     display:grid;
     grid-template-columns:1fr !important;
-    width:100%;
-    max-width:100%;
   }
 
   .catalog-filters{
     position:static !important;
-    top:auto !important;
     width:100%;
-    max-width:100%;
     margin-bottom:22px;
   }
 
@@ -671,75 +308,44 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
   .contact form{
     width:100%;
     max-width:100%;
-    min-width:0;
     height:auto !important;
-    min-height:auto !important;
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .featured-card{
-    transform:none !important;
+    min-height:0 !important;
   }
 
   .product-image{
-    height:140px !important;
-    min-height:140px !important;
+    height:120px !important;
+    min-height:120px !important;
   }
 
   .product-content{
     width:100%;
-    max-width:100%;
-    min-width:0;
     height:auto !important;
-    min-height:auto !important;
-    padding:22px;
+    min-height:0 !important;
+    padding:20px;
   }
 
-  .offer-price,
-  .price-box{
+  .offer-price{
     width:100%;
-    max-width:100%;
-    min-width:0;
     height:auto !important;
-    min-height:auto !important;
+    min-height:0 !important;
     overflow:visible !important;
-    box-sizing:border-box;
   }
 
-  .offer-price strong,
-  .price-box strong{
-    font-size:clamp(1.7rem,9vw,2.15rem);
-    line-height:1.05;
-    word-break:normal;
-    overflow-wrap:anywhere;
+  .offer-price strong{
+    font-size:clamp(1.7rem,9vw,2.1rem);
   }
 
   .benefit-pills{
-    display:flex;
     flex-direction:column;
     align-items:stretch;
-    gap:8px;
-    width:100%;
   }
 
   .benefit-pills span{
     width:100%;
-    max-width:100%;
-    justify-content:flex-start;
-    white-space:normal;
   }
 
   .program-guide{
     padding:20px;
-  }
-
-  h1{
-    font-size:clamp(2.45rem,13vw,3.6rem);
-  }
-
-  h2{
-    font-size:clamp(1.85rem,9vw,2.65rem);
   }
 
   .floating-card{
@@ -750,13 +356,11 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
     width:100%;
   }
 
-  .buttons{
-    width:100%;
+  h1{
+    font-size:clamp(2.45rem,13vw,3.6rem);
   }
 
-  .buttons .btn{
-    text-align:center;
+  h2{
+    font-size:clamp(1.85rem,9vw,2.65rem);
   }
 }
-
-.ideal-badge,.ideal-title,.ideal-text,.club-ideal{display:none !important;}
