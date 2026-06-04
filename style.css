@@ -62,9 +62,6 @@ h3{color:var(--blue);margin-bottom:8px}
 .dark h2,.dark h3{color:white}
 .dark-intro{max-width:760px;margin:0 auto 25px;color:#d7e3f4}
 .business-grid div{background:var(--blue2);border-radius:24px;padding:28px}
-.four{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
-.bands{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:28px 0}
-.bands span{background:var(--orange)}
 
 .catalog-intro{max-width:760px;color:#4b5b70;margin-bottom:35px;font-size:1.1rem}
 .catalog-layout{display:grid;grid-template-columns:260px 1fr;gap:30px;align-items:start}
@@ -76,10 +73,6 @@ h3{color:var(--blue);margin-bottom:8px}
 .catalog-products{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
 .product-card{background:white;border:1px solid #eef1f5;border-radius:28px;overflow:hidden;box-shadow:var(--shadow)}
 .product-image{height:170px;position:relative;background-size:cover;background-position:center}
-.grammar-bg{background:linear-gradient(135deg,#f28c28,#071b35)}
-.proposal-bg{background:linear-gradient(135deg,#071b35,#f28c28)}
-.vocabulary-bg{background:linear-gradient(135deg,#12345c,#f28c28)}
-.ielts-bg{background:linear-gradient(135deg,#f28c28,#d97706)}
 .essential-bg{background:linear-gradient(135deg,#f28c28,#ffd29e)}
 .professional-bg{background:linear-gradient(135deg,#071b35,#2b6cb0)}
 .premium-bg{background:linear-gradient(135deg,#071b35,#f28c28)}
@@ -102,6 +95,8 @@ h3{color:var(--blue);margin-bottom:8px}
 .cta{text-align:center;background:var(--cream);max-width:100%}
 .cta>*{max-width:850px;margin-left:auto;margin-right:auto}
 .contact{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.contact a{color:var(--orange);font-weight:900}
+.contact-buttons{margin-top:20px}
 form{display:grid;gap:14px}
 input,select,textarea{width:100%;padding:14px;border:1px solid #d7dee8;border-radius:14px;font:inherit}
 textarea{min-height:130px}
