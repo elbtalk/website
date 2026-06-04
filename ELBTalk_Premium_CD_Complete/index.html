@@ -3,32 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>EL-B Talk English Centre</title>
   <meta name="description" content="EL-B Talk English Centre: personalized English coaching, Business English, IELTS preparation and Conversation Club." />
-  <link rel="stylesheet" href="style.css" />
-  .cards article .btn {
-  margin-top: 15px;
-}
 
-.disabled-link {
-  opacity: 0.55;
-  pointer-events: none;
-  cursor: not-allowed;
-}
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+
 <body>
   <header class="header">
     <nav class="nav">
       <a href="#home" class="logo"><span>EL-B</span> Talk</a>
-      <button class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
       <ul class="nav-links" id="navLinks">
         <li><a href="#levels">Levels</a></li>
         <li><a href="#club">Club</a></li>
         <li><a href="#business">Business</a></li>
         <li><a href="#ielts">IELTS</a></li>
         <li><a href="#resources">Resources</a></li>
-        <li><a href="#test" class="nav-cta">Free Test</a></li>
+        <li>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdaf9KIlqNik9Tq_V4FJIN5skYSSNI4ZTB1HqiYyKlc5dFJnA/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-cta">
+            Free Test
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -38,19 +44,35 @@
       <div class="hero-text reveal">
         <p class="tag">Premium English coaching for real life</p>
         <h1>Speak English with Confidence</h1>
-        <p class="subtitle">Personalized English coaching, Business English, IELTS preparation and Conversation Clubs for adults, professionals and ambitious learners.</p>
+        <p class="subtitle">
+          Personalized English coaching, Business English, IELTS preparation and Conversation Clubs
+          for adults, professionals and ambitious learners.
+        </p>
+
         <div class="buttons">
-          <a href="#test" class="btn primary">Take Your Free Placement Test</a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdaf9KIlqNik9Tq_V4FJIN5skYSSNI4ZTB1HqiYyKlc5dFJnA/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn primary">
+            Take Your Free Placement Test
+          </a>
+
           <a href="#club" class="btn secondary">Join EL-B Talk</a>
         </div>
+
         <div class="trust">
           <span><i class="fa-solid fa-check"></i> Online & face-to-face</span>
           <span><i class="fa-solid fa-check"></i> AI-powered learning</span>
           <span><i class="fa-solid fa-check"></i> Business communication</span>
         </div>
       </div>
+
       <div class="hero-card reveal">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="People learning English together" />
+        <img
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+          alt="People learning English together"
+        />
         <div class="floating-card">
           <strong>Conversation Club</strong>
           <p>Saturdays · 11:00–12:30 · Caballito</p>
@@ -61,22 +83,87 @@
     <section class="section intro reveal">
       <p class="tag">Why EL-B Talk?</p>
       <h2>A modern English centre with a human touch</h2>
+
       <div class="feature-grid">
-        <div><i class="fa-solid fa-user-graduate"></i><h3>Personalized lessons</h3><p>Classes designed around your goals, level and interests.</p></div>
-        <div><i class="fa-solid fa-briefcase"></i><h3>Professional English</h3><p>Meetings, emails, presentations and workplace communication.</p></div>
-        <div><i class="fa-solid fa-robot"></i><h3>AI English Coach</h3><p>Practice grammar, interviews, IELTS and speaking prompts anytime.</p></div>
+        <div>
+          <i class="fa-solid fa-user-graduate"></i>
+          <h3>Personalized lessons</h3>
+          <p>Classes designed around your goals, level and interests.</p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-briefcase"></i>
+          <h3>Professional English</h3>
+          <p>Meetings, emails, presentations and workplace communication.</p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-robot"></i>
+          <h3>AI English Coach</h3>
+          <p>Practice grammar, interviews, IELTS and speaking prompts anytime.</p>
+        </div>
       </div>
     </section>
 
     <section id="levels" class="section reveal">
       <p class="tag">English Levels</p>
       <h2>Choose your learning path</h2>
+
       <div class="cards">
-        <article><h3>A1 Beginner</h3><p>Start with everyday English.</p><ul><li>Skills: basic questions</li><li>Vocabulary: family, work, places</li><li>Grammar: verb to be, present simple</li><li>Speaking: short answers</li></ul></article>
-        <article><h3>A2 Elementary</h3><p>Build confidence in daily situations.</p><ul><li>Skills: routines and descriptions</li><li>Vocabulary: food, travel, shopping</li><li>Grammar: past simple, comparatives</li><li>Speaking: simple conversations</li></ul></article>
-        <article><h3>B1 Intermediate</h3><p>Express ideas and experiences clearly.</p><ul><li>Skills: opinions and storytelling</li><li>Vocabulary: work, culture, technology</li><li>Grammar: present perfect, modals</li><li>Speaking: longer answers</li></ul></article>
-        <article><h3>B2 Upper Intermediate</h3><p>Communicate naturally and professionally.</p><ul><li>Skills: debates and presentations</li><li>Vocabulary: business and current events</li><li>Grammar: passive, reported speech</li><li>Speaking: fluency and interaction</li></ul></article>
-        <article><h3>C1 Advanced</h3><p>Refine accuracy, nuance and impact.</p><ul><li>Skills: persuasion and leadership</li><li>Vocabulary: idioms and collocations</li><li>Grammar: inversion and emphasis</li><li>Speaking: confident communication</li></ul></article>
+        <article>
+          <h3>A1 Beginner</h3>
+          <p>Start with everyday English.</p>
+          <ul>
+            <li>Basic questions and introductions</li>
+            <li>Everyday vocabulary</li>
+            <li>Verb to be and present simple</li>
+            <li>Short speaking tasks</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>A2 Elementary</h3>
+          <p>Build confidence in daily situations.</p>
+          <ul>
+            <li>Routines and descriptions</li>
+            <li>Food, travel and shopping</li>
+            <li>Past simple and comparatives</li>
+            <li>Simple conversations</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>B1 Intermediate</h3>
+          <p>Express ideas and experiences clearly.</p>
+          <ul>
+            <li>Opinions and storytelling</li>
+            <li>Work, culture and technology</li>
+            <li>Present perfect and modals</li>
+            <li>Longer answers</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>B2 Upper Intermediate</h3>
+          <p>Communicate naturally and professionally.</p>
+          <ul>
+            <li>Debates and presentations</li>
+            <li>Business and current events</li>
+            <li>Passive and reported speech</li>
+            <li>Fluency and interaction</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>C1 Advanced</h3>
+          <p>Refine accuracy, nuance and impact.</p>
+          <ul>
+            <li>Persuasion and leadership</li>
+            <li>Idioms and collocations</li>
+            <li>Inversion and emphasis</li>
+            <li>Confident communication</li>
+          </ul>
+        </article>
       </div>
     </section>
 
@@ -84,22 +171,41 @@
       <div>
         <p class="tag">Conversation Club</p>
         <h2>EL-B Talk Conversation Club</h2>
-        <p>Practice English in a relaxed coffee-shop atmosphere with meaningful topics, vocabulary support and real communication.</p>
+        <p>
+          Practice English in a relaxed coffee-shop atmosphere with meaningful topics,
+          vocabulary support and real communication.
+        </p>
         <p><strong>Location:</strong> Caballito, Buenos Aires</p>
         <p><strong>Schedule:</strong> Saturdays 11:00 – 12:30</p>
+
         <div class="chips">
-          <span>Travel</span><span>Technology</span><span>Food</span><span>Business</span><span>Current Events</span><span>Culture</span><span>AI</span>
+          <span>Travel</span>
+          <span>Technology</span>
+          <span>Food</span>
+          <span>Business</span>
+          <span>Current Events</span>
+          <span>Culture</span>
+          <span>AI</span>
         </div>
       </div>
+
       <div class="testimonial-box">
-        <div><p>“I speak more naturally and with less fear.”</p><strong>Student</strong></div>
-        <div><p>“The topics feel modern, useful and connected to real life.”</p><strong>Student</strong></div>
+        <div>
+          <p>“I speak more naturally and with less fear.”</p>
+          <strong>Student</strong>
+        </div>
+
+        <div>
+          <p>“The topics feel modern, useful and connected to real life.”</p>
+          <strong>Student</strong>
+        </div>
       </div>
     </section>
 
     <section id="business" class="section dark reveal">
       <p class="tag">Business English</p>
       <h2>English for professionals</h2>
+
       <div class="business-grid">
         <div><i class="fa-solid fa-users"></i><h3>Meetings</h3></div>
         <div><i class="fa-solid fa-chart-line"></i><h3>Presentations</h3></div>
@@ -113,81 +219,94 @@
     <section id="ielts" class="section reveal">
       <p class="tag">IELTS Preparation</p>
       <h2>Prepare for your target band score</h2>
+
       <div class="cards four">
-        <article><i class="fa-solid fa-microphone"></i><h3>Speaking</h3><p>Part 1, Part 2 and Part 3 practice.</p></article>
-        <article><i class="fa-solid fa-headphones"></i><h3>Listening</h3><p>Question types and exam strategies.</p></article>
-        <article><i class="fa-solid fa-book-open"></i><h3>Reading</h3><p>Skimming, scanning and timing.</p></article>
-        <article><i class="fa-solid fa-pen-nib"></i><h3>Writing</h3><p>Task 1 and Task 2 structure.</p></article>
+        <article><i class="fa-solid fa-microphone"></i><h3>Speaking</h3><p>Part 1, Part 2 and Part 3 practice with personalized feedback.</p></article>
+        <article><i class="fa-solid fa-headphones"></i><h3>Listening</h3><p>Question types, note-taking, accents and exam strategies.</p></article>
+        <article><i class="fa-solid fa-book-open"></i><h3>Reading</h3><p>Skimming, scanning, timing and vocabulary building.</p></article>
+        <article><i class="fa-solid fa-pen-nib"></i><h3>Writing</h3><p>Task 1 and Task 2 structure, coherence and accuracy.</p></article>
       </div>
-      <div class="bands"><span>5.5</span><span>6.0</span><span>6.5</span><span>7.0+</span></div>
+
+      <div class="bands">
+        <span>5.5</span>
+        <span>6.0</span>
+        <span>6.5</span>
+        <span>7.0+</span>
+      </div>
+
       <a href="#contact" class="btn primary">Practice IELTS Speaking</a>
     </section>
-<section id="resources" class="section reveal">
-  <p class="tag">Learning Resources</p>
-  <h2>Resources for continuous practice</h2>
 
-  <div class="cards">
-    <article>
-      <i class="fa-solid fa-language"></i>
-      <h3>Vocabulary</h3>
-      <p>Word banks, collocations and useful expressions.</p>
-      <a href="#" class="btn secondary disabled-link">Coming soon</a>
-    </article>
+    <section id="resources" class="section reveal">
+      <p class="tag">Learning Resources</p>
+      <h2>Resources for continuous practice</h2>
 
-    <article>
-      <i class="fa-solid fa-spell-check"></i>
-      <h3>Grammar</h3>
-      <p>Question structure, conversation starters and speaking practice.</p>
-      <a
-        href="resources/grammar-boost.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn primary">
-        Practice Grammar
-      </a>
-    </article>
+      <div class="cards">
+        <article>
+          <i class="fa-solid fa-language"></i>
+          <h3>Vocabulary</h3>
+          <p>Word banks, collocations and useful expressions.</p>
+          <a href="#" class="btn secondary disabled-link">Coming soon</a>
+        </article>
 
-    <article>
-      <i class="fa-solid fa-volume-high"></i>
-      <h3>Listening</h3>
-      <p>Audio and video-based practice.</p>
-      <a href="#" class="btn secondary disabled-link">Coming soon</a>
-    </article>
+        <article>
+          <i class="fa-solid fa-spell-check"></i>
+          <h3>Grammar</h3>
+          <p>Question structure, conversation starters and speaking practice.</p>
+          <a
+            href="resources/grammar-boost.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn primary">
+            Practice Grammar
+          </a>
+        </article>
 
-    <article>
-      <i class="fa-solid fa-book"></i>
-      <h3>Reading</h3>
-      <p>Texts and comprehension tasks.</p>
-      <a href="#" class="btn secondary disabled-link">Coming soon</a>
-    </article>
+        <article>
+          <i class="fa-solid fa-volume-high"></i>
+          <h3>Listening</h3>
+          <p>Audio and video-based practice.</p>
+          <a href="#" class="btn secondary disabled-link">Coming soon</a>
+        </article>
 
-    <article>
-      <i class="fa-solid fa-comment-dots"></i>
-      <h3>Pronunciation</h3>
-      <p>Sounds, rhythm and intonation.</p>
-      <a href="#" class="btn secondary disabled-link">Coming soon</a>
-    </article>
+        <article>
+          <i class="fa-solid fa-book"></i>
+          <h3>Reading</h3>
+          <p>Texts and comprehension tasks.</p>
+          <a href="#" class="btn secondary disabled-link">Coming soon</a>
+        </article>
 
-    <article>
-      <i class="fa-solid fa-briefcase"></i>
-      <h3>Business English</h3>
-      <p>Templates for emails, meetings and presentations.</p>
-      <a href="#" class="btn secondary disabled-link">Coming soon</a>
-    </article>
-  </div>
-</section>
+        <article>
+          <i class="fa-solid fa-comment-dots"></i>
+          <h3>Pronunciation</h3>
+          <p>Sounds, rhythm and intonation.</p>
+          <a href="#" class="btn secondary disabled-link">Coming soon</a>
+        </article>
+
+        <article>
+          <i class="fa-solid fa-briefcase"></i>
+          <h3>Business English</h3>
+          <p>Templates for emails, meetings and presentations.</p>
+          <a href="#" class="btn secondary disabled-link">Coming soon</a>
+        </article>
+      </div>
+    </section>
 
     <section id="test" class="section cta reveal">
       <p class="tag">Free Placement Test</p>
-<h2>Discover Your English Level</h2>
-<p>Take our free online assessment and find the right course for you.</p>
+      <h2>Discover Your English Level</h2>
+      <p>
+        Take our free online assessment and find the right course for you.
+        The test opens in Google Forms.
+      </p>
 
-<a
-href="https://docs.google.com/forms/d/e/1FAIpQLSdaf9KIlqNik9Tq_V4FJIN5skYSSNI4ZTB1HqiYyKlc5dFJnA/viewform"
-target="_blank"
-class="btn primary">
-Start Assessment
-</a>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdaf9KIlqNik9Tq_V4FJIN5skYSSNI4ZTB1HqiYyKlc5dFJnA/viewform"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn primary">
+        Start Assessment
+      </a>
     </section>
 
     <section id="contact" class="section contact reveal">
@@ -195,14 +314,27 @@ Start Assessment
         <p class="tag">Contact</p>
         <h2>Start your English journey</h2>
         <p><strong>Teacher:</strong> Lorena Valentini</p>
-        <p><strong>Email:</strong> your@email.com</p>
+        <p><strong>Email:</strong> el.btalkinfo@gmail.com</p>
         <p><strong>Instagram:</strong> @el.btalk.english</p>
-        <a class="btn whatsapp" href="https://wa.me/" target="_blank">WhatsApp</a>
+
+        <a
+          class="btn whatsapp"
+          href="https://wa.me/5491134267830"
+          target="_blank"
+          rel="noopener noreferrer">
+          WhatsApp Lorena
+        </a>
       </div>
+
       <form>
         <input type="text" placeholder="Your name" />
         <input type="email" placeholder="Your email" />
-        <select><option>Conversation Club</option><option>Business English</option><option>IELTS Preparation</option><option>Private Lessons</option></select>
+        <select>
+          <option>Conversation Club</option>
+          <option>Business English</option>
+          <option>IELTS Preparation</option>
+          <option>Private Lessons</option>
+        </select>
         <textarea placeholder="Your message"></textarea>
         <button class="btn primary" type="submit">Send Message</button>
       </form>
