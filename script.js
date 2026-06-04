@@ -1,13 +1,15 @@
 const menuBtn = document.getElementById('menuBtn');
 const navLinks = document.getElementById('navLinks');
 
-menuBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-});
+if (menuBtn && navLinks) {
+  menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
 
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
-});
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+}
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -17,35 +19,11 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-const contactForm = document.getElementById('contactForm');
-const formMessage = document.getElementById('formMessage');
+const contactForm = document.querySelector('form');
 
-contactForm.addEventListener('submit', async function(e) {
-  e.preventDefault();
-
-  formMessage.className = 'form-message';
-  formMessage.textContent = 'Sending your message...';
-
-  const formData = new FormData(contactForm);
-
-  try {
-    const response = await fetch('https://formsubmit.co/ajax/el.btalkinfo@gmail.com', {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    });
-
-    if (response.ok) {
-      formMessage.className = 'form-message success';
-      formMessage.textContent = 'Thank you for contacting EL-B Talk! An agent will contact you right away.';
-      contactForm.reset();
-    } else {
-      throw new Error('Message not sent');
-    }
-  } catch (error) {
-    formMessage.className = 'form-message error';
-    formMessage.textContent = 'Sorry, there was a problem sending your message. Please contact us by WhatsApp or email.';
-  }
-});
+if (contactForm) {
+  contactForm.addEventListener('submit', e => {
+    e.preventDefault();
+    alert('Thank you for contacting EL-B Talk! An agent will contact you right away.');
+  });
+}
