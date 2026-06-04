@@ -114,3 +114,35 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
   .floating-card{position:relative;left:0;bottom:0;margin-top:14px}
   .catalog-filters{position:static}
 }
+
+
+.offer-price{
+  background:var(--cream);
+  border-radius:22px;
+  padding:18px;
+  margin:18px 0;
+  border:1px solid #f4d7b8;
+}
+.old-price{
+  display:block;
+  color:#8a94a6;
+  font-size:1rem;
+  font-weight:900;
+  text-decoration:line-through;
+  margin-bottom:4px;
+}
+.offer-price strong{
+  display:block;
+  color:var(--blue);
+  font-size:2rem;
+  line-height:1;
+  font-weight:1000;
+}
+.offer-price small{
+  display:block;
+  color:var(--orange-dark);
+  font-weight:900;
+  margin-top:6px;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
