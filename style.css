@@ -313,3 +313,101 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
   background:#f28c28;
   margin-right:8px;
 }
+
+
+/* ===== MOBILE FIX: menu + catalog prices ===== */
+@media (max-width: 768px){
+
+  .menu-btn{
+    display:block;
+  }
+
+  .nav{
+    position:relative;
+  }
+
+  .nav-links{
+    display:none;
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:#fff;
+    flex-direction:column;
+    align-items:center;
+    padding:20px 0;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    z-index:999;
+    border-radius:0 0 20px 20px;
+  }
+
+  .nav-links.open{
+    display:flex;
+  }
+
+  .nav-links li{
+    width:100%;
+    text-align:center;
+  }
+
+  .nav-links a{
+    display:block;
+    padding:14px;
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+  }
+
+  .split{
+    grid-template-columns:1fr;
+  }
+
+  .contact{
+    grid-template-columns:1fr;
+  }
+
+  .catalog-layout{
+    grid-template-columns:1fr;
+  }
+
+  .catalog-products{
+    grid-template-columns:1fr;
+  }
+
+  .catalog-filters{
+    position:static;
+  }
+
+  .product-card{
+    width:100%;
+  }
+
+  .product-content{
+    width:100%;
+  }
+
+  .offer-price{
+    width:100%;
+    overflow:hidden;
+  }
+
+  .offer-price strong{
+    font-size:1.85rem;
+    word-break:break-word;
+  }
+
+  .old-price{
+    font-size:1rem;
+  }
+
+  .benefit-pills{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .benefit-pills span{
+    width:100%;
+    justify-content:flex-start;
+  }
+}
