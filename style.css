@@ -315,29 +315,45 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
 }
 
 
-/* ===== MOBILE FIX: menu + catalog prices ===== */
+
+/* ===== EL-B TALK FINAL STRONG MOBILE FIX ===== */
 @media (max-width: 768px){
+
+  html, body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+  }
+
+  .header{
+    width:100%;
+  }
+
+  .nav{
+    position:relative;
+    width:100%;
+    padding:16px 18px;
+  }
 
   .menu-btn{
     display:block;
   }
 
-  .nav{
-    position:relative;
-  }
-
   .nav-links{
     display:none;
     position:absolute;
-    top:80px;
+    top:68px;
     left:0;
+    right:0;
     width:100%;
+    max-width:100%;
     background:#fff;
     flex-direction:column;
     align-items:center;
-    padding:20px 0;
+    gap:0;
+    padding:16px 0;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
-    z-index:999;
+    z-index:9999;
     border-radius:0 0 20px 20px;
   }
 
@@ -352,62 +368,133 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
 
   .nav-links a{
     display:block;
-    padding:14px;
+    width:100%;
+    padding:14px 18px;
   }
 
-  .hero{
-    grid-template-columns:1fr;
-  }
-
-  .split{
-    grid-template-columns:1fr;
-  }
-
-  .contact{
-    grid-template-columns:1fr;
-  }
-
+  .hero,
+  .split,
+  .contact,
   .catalog-layout{
-    grid-template-columns:1fr;
+    display:grid;
+    grid-template-columns:1fr !important;
+    width:100%;
+    max-width:100%;
   }
 
-  .catalog-products{
-    grid-template-columns:1fr;
+  .section,
+  .hero,
+  .catalog,
+  .test-wrapper,
+  .test-hero{
+    width:100%;
+    max-width:100%;
+    padding-left:18px;
+    padding-right:18px;
+  }
+
+  .catalog-products,
+  .cards,
+  .feature-grid,
+  .business-grid{
+    display:grid;
+    grid-template-columns:1fr !important;
+    width:100%;
+    max-width:100%;
+    gap:22px;
   }
 
   .catalog-filters{
-    position:static;
+    position:static !important;
+    width:100%;
+    max-width:100%;
   }
 
-  .product-card{
+  .product-card,
+  .cards article,
+  .feature-grid div,
+  .testimonial-box div,
+  .contact form{
     width:100%;
+    max-width:100%;
+    min-width:0;
   }
 
   .product-content{
     width:100%;
+    max-width:100%;
+    min-width:0;
+    padding:22px;
   }
 
   .offer-price{
     width:100%;
-    overflow:hidden;
+    max-width:100%;
+    min-width:0;
+    overflow:visible;
+    box-sizing:border-box;
   }
 
   .offer-price strong{
-    font-size:1.85rem;
-    word-break:break-word;
+    font-size:clamp(1.7rem,9vw,2.15rem);
+    line-height:1.05;
+    word-break:normal;
+    overflow-wrap:anywhere;
   }
 
   .old-price{
     font-size:1rem;
+    max-width:100%;
+    overflow-wrap:anywhere;
+  }
+
+  .rate-label,
+  .offer-price small{
+    max-width:100%;
+    overflow-wrap:anywhere;
   }
 
   .benefit-pills{
+    display:flex;
     flex-direction:column;
-    align-items:flex-start;
+    align-items:stretch;
+    gap:8px;
+    width:100%;
   }
 
   .benefit-pills span{
     width:100%;
+    max-width:100%;
     justify-content:flex-start;
+    white-space:normal;
+  }
+
+  .ideal-badge{
+    width:100%;
+    max-width:100%;
+  }
+
+  h1{
+    font-size:clamp(2.45rem,13vw,3.6rem);
+  }
+
+  h2{
+    font-size:clamp(1.85rem,9vw,2.65rem);
+  }
+
+  .floating-card{
+    position:relative;
+    left:0;
+    bottom:auto;
+    margin-top:14px;
+    width:100%;
+  }
+
+  .buttons{
+    width:100%;
+  }
+
+  .buttons .btn{
+    text-align:center;
   }
 }
