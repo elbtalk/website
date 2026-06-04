@@ -364,3 +364,82 @@ footer{background:var(--blue);color:white;text-align:center;padding:30px}
     font-size:clamp(1.85rem,9vw,2.65rem);
   }
 }
+/* ===== MOBILE FIX DEFINITIVO ===== */
+
+@media (max-width:768px){
+
+  html,
+  body{
+    overflow-x:hidden !important;
+    width:100%;
+    max-width:100%;
+  }
+
+  .catalog-layout{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:20px !important;
+  }
+
+  .catalog-filters{
+    position:static !important;
+    width:100% !important;
+    max-width:100% !important;
+  }
+
+  .catalog-products{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:20px !important;
+    width:100% !important;
+  }
+
+  .product-card{
+    width:100% !important;
+    max-width:100% !important;
+    min-height:auto !important;
+    height:auto !important;
+  }
+
+  .product-content{
+    height:auto !important;
+    min-height:auto !important;
+  }
+
+  .offer-price{
+    width:100% !important;
+    height:auto !important;
+    min-height:auto !important;
+  }
+
+  .offer-price strong{
+    font-size:2rem !important;
+    line-height:1 !important;
+  }
+
+  .benefit-pills{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:8px !important;
+  }
+
+  .benefit-pills span{
+    width:100% !important;
+  }
+
+  .hero,
+  .split,
+  .contact{
+    display:flex !important;
+    flex-direction:column !important;
+  }
+
+  .floating-card{
+    position:relative !important;
+    left:0 !important;
+    bottom:auto !important;
+    margin-top:15px !important;
+    width:100% !important;
+  }
+
+}
