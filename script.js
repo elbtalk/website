@@ -18,12 +18,3 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.15 });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-const contactForm = document.querySelector('form');
-
-if (contactForm) {
-  contactForm.addEventListener('submit', e => {
-    e.preventDefault();
-    alert('Thank you for contacting EL-B Talk! An agent will contact you right away.');
-  });
-}
